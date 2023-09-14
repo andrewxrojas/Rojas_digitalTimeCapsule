@@ -1,0 +1,76 @@
+body{
+    background-color: #3b5578;
+}
+
+#myLikes {
+    font-family: "garamond-atf-text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+nav {
+
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 35px;
+}
+
+a {
+    font-family: "garamond-atf-text", serif;
+    font-weight: 600;
+    color: #c4dbf9;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+
+
+
+header{
+    font-family: "garamond-atf-text", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #3B5578;
+    text-align: center;
+    color: #3b5578;
+    border: 1px solid #3b5578;
+    margin: 0px 500px 0px 500px; 
+    background-color: #c4dbf9;
+    
+}
+
+.likes {
+    font-family: "garamond-atf-text", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-wrap: wrap;
+    color: #3b5578;
+    border: 1px solid #3b5578;
+    background-color: #c4dbf9;
+    margin: 0px 500px 0px 500px; 
+    padding: 15px 0px 15px 0px;
+
+}
+
+footer {
+    text-align: center; 
+    padding: 70px 0px 10px 0px;
+  }
+  
+  a {
+      margin: 35px
+  }
+  
+  .social {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 0px 10px 0px;
+  }
