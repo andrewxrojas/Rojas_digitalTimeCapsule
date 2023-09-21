@@ -4,8 +4,11 @@
 }
 
 body{
-    background-color: #3b5578;
+    background-image: linear-gradient(#3B5578, #C4DBF9,#3B5578);
+    height: 317vh;
 }
+/* all of the commented code is old will review and revise and delete once finished */
+
 
 #introduction {  /*parent container*/
     font-family: "garamond-atf-text", serif;
@@ -16,6 +19,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
 
 nav {
@@ -24,7 +28,7 @@ nav {
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 100px;   
+    margin-bottom: 100px; 
 }
 
 h1{
@@ -100,7 +104,7 @@ img {  /* item container 1 */
     max-height: 100%;
     border: 1px solid #3b5578;
     background-color: #c4dbf9;
-    margin: 5px 300px 0px 300px; 
+    /* margin: 5px 300px 0px 300px;  */
     padding: 10px 10px 100px 10px;
     -moz-box-shadow: 0 0 10px #161616;
     -webkit-box-shadow: 0 0 10px #161616;
