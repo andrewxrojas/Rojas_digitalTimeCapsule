@@ -1,75 +1,113 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #3b5578;
 }
 
-#introduction {
+#introduction {  /*parent container*/
     font-family: "garamond-atf-text", serif;
     font-weight: 600;
     font-style: normal;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
-
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 100px;   
+}
+
+h1{
+    text-transform: uppercase;
+    color: #c4dbf9;
+    font-size: 50px;
+    /* margin-left: 370px; not sure if I will keep the nav bar in header or nav */
+}
+
+fieldset:nth-of-type(3) > legend{
+    transform: rotate(180deg);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 20px;
 }
 
 li {
     display: inline-block;
-    margin: 35px;
+    margin: 75px;
 }
 
 a {
     font-family: "garamond-atf-text", serif;
     font-weight: 600;
+    font-size: 20px;
     color: #c4dbf9;
     text-decoration: none;
     letter-spacing: 1px;
-
-}
-
-
-
-header{
-    font-family: "garamond-atf-text", serif;
-    font-weight: 500;
-    font-style: normal;
-    color: #3B5578;
-    text-align: center;
-    color: #3b5578;
-    border: 1px solid #3b5578;
-    margin: 0px 300px 0px 300px; 
-    background-color: #c4dbf9;
-    
 }
 
 .intro {
     font-family: "garamond-atf-text", serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
+    text-align:left;
     text-wrap: wrap;
     color: #3b5578;
     border: 1px solid #3b5578;
     background-color: #c4dbf9;
-    margin: 0px 300px 0px 300px; 
-    padding: 15px 0px 15px 0px;
+    margin: 250px 300px 0px 300px; 
+    padding: 45px 45px 100px 45px;
 }
 
 footer {
   text-align: center; 
-  padding: 70px 0px 10px 0px;
-}
-
-a {
-    margin: 35px
+  padding-top: 200px;
+  padding-bottom: 1px;
 }
 
 .social {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 0px 10px 0px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 100px;
+}
+
+
+img {  /* item container 1 */
+    /* height: 100vh */
+    margin: auto;
+    width: 100%;
+    max-width: 450px;
+    max-height: 100%;
+    border: 1px solid #3b5578;
+    background-color: #c4dbf9;
+    margin: 5px 300px 0px 300px; 
+    padding: 10px 10px 100px 10px;
+    -moz-box-shadow: 0 0 10px #161616;
+    -webkit-box-shadow: 0 0 10px #161616;
+    box-shadow: 0 0 35px #161616;
+}
+
+.intro, .social { /* item container 2 */
+    align-items: center;
+    width: 70%;
 }
