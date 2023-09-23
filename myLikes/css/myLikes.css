@@ -168,9 +168,9 @@ nav {
 } */
 
 h1{
-    text-transform: uppercase;
+    text-transform:capitalize;
     color: #c4dbf9;
-    font-size: 50px;
+    font-size: 40px;
     /* margin-left: 370px; not sure if I will keep the nav bar in header or nav */
 }
 
@@ -191,6 +191,7 @@ p{
     text-align: left;
     letter-spacing: 1px;
 }
+
 
 
 
@@ -223,9 +224,9 @@ header {
     color: #3B5578;
     text-align: center;
     color: #3b5578;
-    border: 1px solid #3b5578;
-    margin: 0px 300px 0px 300px; 
-    background-color: #c4dbf9;
+    /* border: 1px solid #3b5578; */
+    /* margin: 0px 300px 0px 300px;  */
+    /* background-color: #c4dbf9; */
     
 }
 
