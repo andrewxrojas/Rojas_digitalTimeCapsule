@@ -3,294 +3,190 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+    --margin-top:50px;
+    --content-margin-bottom:50px;
+    --margin-footer:100px;
+}
 
 body{
-    background-image: linear-gradient(#3B5578, #C4DBF9,#3B5578);
-    height: 240vh;
+    background-image: linear-gradient(#3B5578, #C4DBF9,#3B5578 );
+
     
 }
 
-/* all of the commented code is old will review and revise and delete once finished */
 
-
-/* body{
-    background-color: #3b5578;
-} */
-
- 
-/* parent */
-#myLikes {              
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction:column;
-    flex-wrap:wrap;
-    align-items: center;
-    flex: 1;
-    }
-
-/* item containers */
-    .container{
-        position: relative;
-        width: 1100px;
-        /* display: flex;
-        flex-direction: column; */
-        display: grid;
-        gap: 15px;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1 fr));
-        /* justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 30px;
-        margin-top: 8%; */
-    }
-
-    .container, .card{
-        width: 100%;
-        position: relative;
-        height: 405px;
-        margin: 30px 10px;
-        padding: 20px 15px;
-        display: flex;
-        display: inline-block;
-        flex-direction: row;
-        justify-content: center;
-        transition: 0.3s ease-in-out;
-        margin-top: 5%;
-        font-family: "garamond-atf-text", serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: left;
-        color: #3b5578;         
-    }
-
-
-    
-
-    
-
-    .container, .card{
-        margin: 150px 0px 0px 60px;
-
-    }
-
-    .container, .card, .imgBx{
-        position: relative;
-        width: 400px;
-        height:560px;
-        top:-60px;
-        left:20px;
-        
-    }
-
-    .container, .card, .imgBx img 
-    {
-        max-width: 100%;
-        border-radius: 5px;
-    }
-    
-    .imgBx:hover img{
-        transform: scale(1.1);
-    }
-
-    fieldset:nth-of-type(3) > legend{
-        transform: rotate(180deg);
-    }
-
-
-/* .sade, .sade-img {
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
-    flex-direction: row;----
-    display: inline-block; ---
-    align-items: stretch;---
-}
-
-.physical, .physical-img{
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
-
-}
-
-
-.amhs, .amhs-img{
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
-
-}
-
-.sade{
-    
-} */
-
-
-#myLikes {  /*parent container*/
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr 1.5fr 0.9fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "content1 content2 content3"
+    "content4 content5 content6"
+    "footer footer footer ";
+    grid-gap: 1rem;
     font-family: "garamond-atf-text", serif;
     font-weight: 600;
     font-style: normal;   
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content:center;
+
+    
+}
+
+nav a:hover{
+    color:#C4DBF9;
 
 }
 
+li{
+    text-transform: uppercase;
+    font-size: 20px;
 
-/* #myLikes {
-    font-family: "garamond-atf-text", serif;
-    font-weight: 600;
-    font-style: normal;
-} */
-
-li:hover{
-    transform: scale(1.1);
 }
 
 .social a:hover{
-    transform: scale(1.1);
+    color: #C4DBF9;
 }
-
-nav {
-    font-style: normal;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 100px; 
-}
-
-/* nav {
-
-    font-style: normal;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
 
 h1{
     text-transform:capitalize;
     color: #c4dbf9;
     font-size: 40px;
-    /* margin-left: 370px; not sure if I will keep the nav bar in header or nav */
 }
 
-h2{
-    text-align: center;
-}
-
-
-
-
-/* li {
-    display: inline-block;
-    margin: 35px;
-} */
 
 p{
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     letter-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-
-
 
 li {
     display: inline-block;
     margin: 75px;
+    color: #3B5578;
 }
 
-/* a {
-    font-family: "garamond-atf-text", serif;
-    font-weight: 600;
-    color: #c4dbf9;
-    text-decoration: none;
-    letter-spacing: 1px;
-} */
-
 a {
-    font-family: "garamond-atf-text", serif;
-    font-weight: 600;
     font-size: 20px;
     color: #c4dbf9;
     text-decoration: none;
     letter-spacing: 1px;
-}
-
-header {
-    font-family: "garamond-atf-text", serif;
-    font-weight: 500;
-    font-style: normal;
     color: #3B5578;
-    text-align: center;
-    color: #3b5578;
-    /* border: 1px solid #3b5578; */
-    /* margin: 0px 300px 0px 300px;  */
-    /* background-color: #c4dbf9; */
-    
 }
-
-
-/* .likes {
-    font-family: "garamond-atf-text", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align:left;
-    text-wrap: wrap;
-    color: #3b5578; */
-    /* border: 1px solid #3b5578;
-    background-color: #c4dbf9; */
-    /* margin: 250px 300px 0px 300px; 
-    padding: 45px 45px 100px 45px;
-} */
-
-
-
-footer {
-    text-align: center; 
-    padding-top: 200px;
-    padding-bottom: 1px;
-  }
-/* footer {
-    text-align: center; 
-    padding: 70px 0px 10px 0px;
-  } */
-  
-  /* a {
-      margin: 35px
-  } */
 
 .social {
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 10px 0px 10px 0px;
     margin-top: 100px;
-    
+    margin-bottom: 100px;
+
 }
 
 .social a {
     display: inline-block;
-    margin: 100px;
+    margin-right: 100px; 
+    margin-top: var(--margin-footer);
+    color: #3B5578;
+    justify-items: center;
+
 } 
 
-  /* .social {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 10px 0px 10px 0px;
-  } */
 
-  img {  /* item container 1 */
-    /* height: 100vh */
-    /* margin: auto; */
-    /* width: 100%;
-    max-width: 450px;
-    max-height: 100%; */
+img { 
+    border-radius: 3px;
+    width: 450px;
+    height: 550px;
     border: 1px solid #3b5578;
     background-color: #c4dbf9;
-    /* margin: 5px 300px 0px 300px;  */
     padding: 10px 10px 100px 10px;
     -moz-box-shadow: 0 0 10px #161616;
     -webkit-box-shadow: 0 0 10px #161616;
     box-shadow: 0 0 35px #161616;
 }
 
+
+
+nav{
+    /* background-color: rgb(0, 255, 234); */
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+    margin-bottom: var(--content-margin-bottom);
+    
+
+}
+#content1{
+    /* background-color: orange; */
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+
+}
+#content2{
+    /* background-color: hotpink; */
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+}
+#content3{
+    /* background-color: brown; */
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+}
+#content4{
+    /* background-color: rgb(255, 0, 212); */
+    grid-area: content4;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+    margin-top: var(--margin-top);
+}
+#content5{
+    /* background-color: rgb(156, 115, 48); */
+    grid-area: content5;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+    margin-top: var(--margin-top);
+}
+#content6{
+    /* background-color: rgb(255, 0, 34); */
+    grid-area: content6;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+    margin-top: var(--margin-top); 
+}
+footer{
+    /* background-color: darkcyan; */
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+    text-align: center; 
+    
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.4fr 1.4fr 1.4fr 1.4fr 1.4fr 1.4fr 0.4fr;
+        grid-template-areas: 
+        "nav"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "content5"
+        "content6"
+        "footer"
+        ;
+    }
+}
