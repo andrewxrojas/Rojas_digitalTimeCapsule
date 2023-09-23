@@ -94,7 +94,7 @@ a {
 
 .social a {
     display: inline-block;
-    margin-right: 100px; 
+    margin: 100px;
     margin-top: var(--margin-footer);
     color: #3B5578;
     justify-items: center;
