@@ -66,13 +66,26 @@ h2{
     
 }
 
-
+b{
+    font-size: 20px;
+    
+}
 p{
-    font-size: 15px;
-    text-align: left;
+    color: #324967;
+    border: 1px solid #C4DBF9;
+    opacity: 75%;
+    background-color: #C4DBF9;
+    padding: 10px;
     letter-spacing: 2px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: left;
+    border-radius: 3px;
+    font-size: 15px;
+    -moz-box-shadow: 0 0 10px #161616;
+    -webkit-box-shadow: 0 0 10px #161616;
+    box-shadow: 0 0 35px #161616;
+    margin-top: 10px;
 }
 
 li {
@@ -119,8 +132,6 @@ img {
     -webkit-box-shadow: 0 0 10px #161616;
     box-shadow: 0 0 35px #161616;
 }
-
-
 
 nav{
     /* background-color: rgb(0, 255, 234); */

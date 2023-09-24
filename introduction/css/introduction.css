@@ -25,7 +25,9 @@ body{
     grid-template-rows: 0.3fr 1.5fr 0.9fr;
     grid-template-areas: 
     "nav nav nav"
-    "content1 content2 content3"
+    "content1 content2 content2"
+    "content1 content3 content3"
+    "content1 content4 content4"
     "footer footer footer ";
     grid-gap: 1rem;
     font-family: "garamond-atf-text", serif;
@@ -67,6 +69,7 @@ p{
     letter-spacing: 2px;
     margin-left: 20px;
     margin-right: 20px;
+    color: #324967;
 }
 
 li {
@@ -113,7 +116,20 @@ img {
     box-shadow: 0 0 35px #161616;
 }
 
+#content2, #content3, #content4{
+    border: 1px solid #C4DBF9;
+    opacity: 75%;
+    background-color: #C4DBF9;
+    padding: 5px;
+    -moz-box-shadow: 0 0 10px #161616;
+    -webkit-box-shadow: 0 0 10px #161616;
+    box-shadow: 0 0 35px #161616;
+}
 
+
+#content1,#content2,#content3{
+    margin-top: 20;
+}
 
 nav{
     /* background-color: rgb(0, 255, 234); */
@@ -137,14 +153,22 @@ nav{
     grid-area: content2;
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);
-    margin-top: 59px;
+    margin-top: 70px;
 }
 #content3{
     /* background-color: brown; */
     grid-area: content3;
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);
-    padding-top: 60px;
+    margin-top: 10px;
+}
+
+#content4{
+    /* background-color: brown; */
+    grid-area: content4;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+    margin-top: 10px;
 }
 
 footer{
@@ -165,6 +189,7 @@ footer{
         "content1"
         "content2"
         "content3"
+        "content4"
         "footer"
         ;
     }
