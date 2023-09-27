@@ -26,6 +26,7 @@ body{
     grid-template-areas: 
     "nav nav nav"
     "content1 content2 content3"
+    "content4 content5 content6"
     "footer footer footer ";
     grid-gap: 1rem;
     font-family: "garamond-atf-text", serif;
@@ -161,6 +162,30 @@ nav{
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);
 }
+
+#content4{
+    /* background-color: orange; */
+    grid-area: content4;
+    margin-top: 100px;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+
+}
+#content5{
+    /* background-color: hotpink; */
+    grid-area: content5;
+    margin-top: 100px;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+}
+#content6{
+    /* background-color: brown; */
+    grid-area: content6;
+    margin-top: 100px;
+    border-radius: var(--main-radius);
+    border-radius: var(--main-padding);
+}
+
 footer{
     /* background-color: darkcyan; */
     grid-area: footer;
@@ -179,6 +204,9 @@ footer{
         "content1"
         "content2"
         "content3"
+        "content4"
+        "content5"
+        "content6"
         "footer"
         ;
     }
