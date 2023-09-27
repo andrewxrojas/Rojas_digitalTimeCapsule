@@ -130,7 +130,7 @@ img {
 
 
 nav{
-    /* background-color: rgb(0, 255, 234); */
+    /* background-color: rgb(0, 255, 234 -- these were to see how much coverage each container took); */
     grid-area: nav;
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);

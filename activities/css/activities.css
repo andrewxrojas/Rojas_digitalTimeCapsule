@@ -166,24 +166,24 @@ nav{
 #content4{
     /* background-color: orange; */
     grid-area: content4;
-    margin-top: 100px;
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);
+    margin-top: var(--margin-top); 
 
 }
 #content5{
     /* background-color: hotpink; */
     grid-area: content5;
-    margin-top: 100px;
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);
+    margin-top: var(--margin-top); 
 }
 #content6{
     /* background-color: brown; */
     grid-area: content6;
-    margin-top: 100px;
     border-radius: var(--main-radius);
     border-radius: var(--main-padding);
+    margin-top: var(--margin-top); 
 }
 
 footer{
